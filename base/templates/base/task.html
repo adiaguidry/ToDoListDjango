@@ -1,0 +1,10 @@
+{% extends 'base/my_style.html' %}
+{% block content %}
+
+<h1>{{ task.title }} </h1>
+<p>{{ task.description }} </p>
+<p>Task completed: {{ task.complete }} </p>
+<p>Task created on: {{ task.created }} </p>
+<a class="button" href="{% url 'tasks' %}">Back</a>
+
+{% endblock content %}

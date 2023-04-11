@@ -1,0 +1,25 @@
+{% extends 'base/my_style.html' %}
+{% block content %}
+
+<div class="top-bar">
+    <h1>Sign Up</h1>
+</div>
+
+
+<div class="card-body">
+<form action="" method="POST">
+    {% csrf_token %}
+    <!--{{form.as_p}} this would give us the generic form-->
+    <label>{{form.username.label}}</label>
+        {{form.username}}
+    <label>{{form.password1.label}}</label>
+        {{form.password1}}
+    <label>{{form.password2.label}}</label>
+        {{form.password2}}
+    <input style="" class="button register" type="submit" value="Sign Up">
+</form>
+
+<p>Have an account?<a class="button" href="{% url 'login' %}">Login</a></p>
+</div>
+
+{% endblock content %}

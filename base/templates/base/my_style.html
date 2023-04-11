@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pending List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <style>
+        body {
+            background-color: #f3f3f3ee;
+            font-family: 'Roboto', sans-serif;
+            padding: 20px;
+        }
+        .container{
+            background-color: #fdfdfd;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 20px;
+        }
+        a {
+            color: #7b68ee;
+            text-decoration: none;
+        }
+
+        .top-bar{
+            display: flex;
+            justify-content: space-between;
+            background: #7b68ee;
+            padding: 10px;
+            border-radius: 20px 20px 0 0;
+            color: #fff
+        }
+        .top-bar a {
+            color: #fff;
+        }
+
+        .wrapper-task{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #e2e2e2;
+            padding: 20px
+        }
+        .task-title {
+            display: flex;
+        }
+        #wrapper-create-search{
+            text-decoration: none;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        #create-link{
+            text-decoration: none;
+            font-size: 42px;
+        }
+        input[type=text],
+        input[type=password],
+        textarea {
+            border: 1px solid #e2e2e2;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+        label {
+        padding-top: 10px !important;
+        display: block;
+        }
+
+        .button {
+            border: 1px solid #7b68ee;
+            background-color: #7b68ee;
+            margin: 0 5px;
+            color: #fff;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .register {
+            border: 1px solid #65d4a0;
+            background-color: #65d4a0;
+        }
+
+        .card-body{
+        padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    {% block content %}
+
+     {% endblock content %}
+</div>
+
+
+</body>
+</html>
