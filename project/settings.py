@@ -9,9 +9,12 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
+import dj_database_url
 from pathlib import Path
 
+prod_db = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +28,7 @@ SECRET_KEY = 'django-insecure-!_looc06ou7rb@2br5r8t5^==19=sgl2-4=m&9$%+z%1x!7n40
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
