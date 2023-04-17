@@ -14,7 +14,7 @@ import dj_database_url
 from pathlib import Path
 
 prod_db = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(prod_db)
+DATABASES = { 'default': dj_database_url.config() }
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
