@@ -10,11 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
-import dj_database_url
+#import dj_database_url
 from pathlib import Path
 
-prod_db = dj_database_url.config(conn_max_age=500)
-DATABASES = { 'default': dj_database_url.config() }
+#prod_db = dj_database_url.config(conn_max_age=500)
+#DATABASES = { 'default': dj_database_url.config() }
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
