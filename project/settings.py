@@ -143,7 +143,7 @@ DATABASES['default'].update(db_from_env)
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://todolistdjango.herokuapp.com']
 
 # Static files settings
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
