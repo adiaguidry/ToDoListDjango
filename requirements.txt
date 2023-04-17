@@ -38,7 +38,6 @@ pyjsparser==2.7.1
 pylint==2.16.0
 PyMsgBox==1.0.9
 pyobjc==9.0.1
-pyobjc-core==9.0.1
 pyobjc-framework-Accessibility==9.0.1
 pyobjc-framework-Accounts==9.0.1
 pyobjc-framework-AddressBook==9.0.1
